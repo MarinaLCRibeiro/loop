@@ -5,6 +5,7 @@ function a() {
 
   for (let contador = 0; contador < quantidade; contador++) {
     resultado += `${forFerramenta}| `;
+    //result.innerHTML +=
   }
 
   result.innerHTML = resultado;

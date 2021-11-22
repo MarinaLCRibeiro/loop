@@ -3,9 +3,10 @@ var result="";
 var frmCoelho= Number (coelho.value);
 var frmAnos= Number (qnt.value)
 
-for (let cont = 0; cont <=frmAnos -1; cont++) {
-   frmCoelho = frmCoelho*7;
-   result += `${cont}º ano- ${frmCoelho} coelho <br>`;
+for (let cont = 1; cont <=frmAnos ; cont++) {
+    result += `${cont}º ano- ${frmCoelho} coelho <br>`;
+    frmCoelho = frmCoelho*7;
+  
     console.log(frmCoelho);
     
 }
