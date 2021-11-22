@@ -1,5 +1,5 @@
 //lista com todas as noticias
-const todasNoticias = [];
+let todasNoticias = [];
 
 //ocultando o titulo das noticias
 document.querySelector("#tituloNoticias").style = "display: none";
@@ -45,15 +45,15 @@ const mostrarNoticias = function () {
   }
 
   document.querySelector("#mostrarNoticias").innerHTML = not;
-  document.querySelector("#tituloNoticias").innerHTML = "";
+  
 };
 
 //4 - Limpar os dados do array todasNoticias
 //4.1 - Ocultar o tituloNoticias
 //4.2 - Limpar a div id="mostrarNoticias"
 const deletarNoticias = function () {
-  todasNoticias = [];
-  document.querySelector("#mostrarNoticias").value = "";
+ todasNoticias = [];
+  document.querySelector("#mostrarNoticias").innerHTML = "";
   document.querySelector("#mostrarNoticias").focus();
   document.querySelector("#tituloNoticias").style = "display: none";
 };
